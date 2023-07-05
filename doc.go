@@ -12,9 +12,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-// This package provides all of its functionality through its
-// submodules. The submodules in the exporters directory provide
-// implementations for trace and metric exporters for third-party
-// collectors, and submodules in the instrumentation directory provide the
-// instrumentation for the popular go libraries.
-package contrib
+// Package otelkafka instruments the github.com/confluentinc/confluent-kafka-go/v2 package.
+//
+// The consumer's span will be created as a child of the producer's span.
+//
+// Based on: https://github.com/DataDog/dd-trace-go/tree/v1/contrib/confluentinc/confluent-kafka-go/kafka
+package otelkafka // import "github.com/kyawkyawsoezhu/otelkafka"
